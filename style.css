@@ -1,0 +1,29 @@
+div#container {
+	background-color: aqua;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 45rem;
+	height: 45rem;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	border: black solid 2px;
+}
+
+.cell {
+	background-color: burlywood;
+
+	width: 43px;
+	height: 43px;
+
+	border: red solid 1px;
+}
+
+div.black {
+	background-color: black;
+}
