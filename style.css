@@ -1,4 +1,4 @@
-div#container {
+div#grid-container {
 	background-color: aqua;
 
 	position: absolute;
@@ -17,11 +17,6 @@ div#container {
 
 .cell {
 	background-color: white;
-
-	width: 43px;
-	height: 43px;
-
-	border: red solid 1px;
 }
 
 div.black {
