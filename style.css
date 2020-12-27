@@ -16,7 +16,7 @@ div#container {
 }
 
 .cell {
-	background-color: burlywood;
+	background-color: white;
 
 	width: 43px;
 	height: 43px;
@@ -26,4 +26,10 @@ div#container {
 
 div.black {
 	background-color: black;
+}
+
+button#clear {
+	position: absolute;
+	top: 10%;
+	left: 50%;
 }
