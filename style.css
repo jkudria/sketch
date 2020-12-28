@@ -9,11 +9,15 @@ div#main {
 	height: 900px;
 }
 
-div#controls {
+div.controls {
 	padding: 1rem;
 
 	display: flex;
 	justify-content: center;
+}
+
+button, #picker {
+	margin: 2px;
 }
 
 div#grid-container {
