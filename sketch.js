@@ -1,7 +1,8 @@
 // TODO: input from user
 const defaultGridDim = 16;
 
-const bgColor = '#FFFFFF';
+// const bgColor = '#FFFFFF';
+let sketchColor = '#1199FF';
 
 let container = document.querySelector("#grid-container");
 let containerStyle = window.getComputedStyle(container, null);
@@ -13,6 +14,7 @@ let containerHeight = parseInt(containerStyle.getPropertyValue('height').substri
 let cells;
 createCells(defaultGridDim);
 
+// TODO: limit gridDim to say 128
 function createCells(gridDim) {
 
 	// let cellDim = Math.floor(containerHeight/gridDim);
@@ -30,18 +32,14 @@ function createCells(gridDim) {
 	cells = document.querySelectorAll('div.cell');
 	cells.forEach(cell => {
 		cell.addEventListener('mouseover', () => {
-			cell.classList.add('black');
+			cell.style.backgroundColor = sketchColor;
 		});
 	});
 }
 
 function clearCells() {
 	cells.forEach(cell => {
-
-		// TODO: can I put this if statement into one line
-		if (cell.classList.contains('black')) {
-			cell.classList.remove('black');
-		}
+		cell.style.backgroundColor = null;
 	});
 }
 
