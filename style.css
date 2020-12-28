@@ -1,12 +1,27 @@
+/* TODO: Why does border-box break the grid? */
+/* * {
+	box-sizing: border-box;
+} */
+/* 
 div#main {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	/* TODO: Can I make this all relative instead of hardcoding pixel values? */
+	TODO: Can I make this all relative instead of hardcoding pixel values?
 	width: 722px;
 	height: 900px;
+} */
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100vw;
+	height: 100vh;
 }
 
 div.controls {
